@@ -17,16 +17,14 @@
     <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css" />
     <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Project: Goldenthorn Institute of Scholars</title>
+    <title>Project: Intramurals information</title>
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand">
-                <img src="GIoS.png" alt="Riverbend Brew Logo" class="rounded" style="width: 70px;">
-            </a>
-            <p>Goldenthorn Institiute of Scholars</p>
+            <p>Intramurals</p>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -48,31 +46,42 @@
     </nav>
 
 
-    <div class="container my-5">
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <img src="institute.jpg" alt="Sample Image" class="img-fluid rounded">
-            </div>
+    <h1>Intrams team</h1>
+    <form>
+        <label for="OR"> Are you done with the online registration?</label><br>
+        <input type="radio" id="or1" name="Onlinereg" value="yes"> Yes
+        <input type="radio" id="or2" name="Onlinereg" value="no"> No <br><br>
 
-            <div class="col-md-6">
-                <h1 class="mb-3">Welcome to Goldenthorn Institute of Scholars</h1>
-                <p class="lead">
-                    The Goldenthorn Institute of Scholars is committed to fostering both academic excellence and
-                    individual development.
-                    We strive to give students the resources, information, and surroundings they require to thrive both
-                    academically and socially.
-                </p>
-                <p>
-                    Explore our programs, participate in engaging organizations, and become part of a community that
-                    values
-                    learning, innovation, and collaboration.
-                </p>
-            </div>
-        </div>
-    </div>
+
+        <label for="Medclear"> Do you have a medical clearance from the clinic?</label><br>
+        <input type="radio" id="med1" name="Medclear" value="Yes"> Yes
+        <input type="radio" id="med2" name="Medclear" value="No"> No<br><br>
+
+        <label for="Grade"> What's your Grade & Section</label><br>
+
+        <select name="Grade" id="Grlvl" name="grade">
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option disabled selected value="0">Choose your option</option>
+
+        </select>
+        <br><br>
+        <select name="Section" id="Section" name="section">
+            <option value="Eme">Emerald</option>
+            <option value="Ruby">Ruby</option>
+            <option value="Sapph">Sapphire</option>
+            <option value="Topaz">Topaz</option>
+            <option disabled selected value="0">Choose your option</option>
+        </select>
+        <input type="button" py-click="team_signup" value="Check">
+    </form>
+    <div id="output"></div> 
     <footer class="footer">
-        <p><a href="https://github.com/KEspina-9T?tab=repositories" target="_blank">Khloe Myles S. Espina | 10-Topaz</p>
+        <p><a href="https://github.com/KEspina-9T?tab=repositories" target="_blank">Khloe Myles S. Espina & Harmony Gail K. Yao| 10-Topaz</p>
     </footer>
 </body>
+
 
 </html>
